@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>学术家族树</title>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        html,
+        body {
+            overflow: scroll;
+            margin: 0;
+            background-image: url("img/timg1.jpg");
+        }
+        textarea {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        button {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #input{
+            width: 600px;
+            min-height: 200px;
+            background-color: aquamarine;
+        }
+        h1 {
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<h1>学术家族树</h1>
+<textarea id="input">请在这里输入文本</textarea>
+<button id="generate">生成</button>
+<div id="nodes"></div>
+<script>
+    /*Fixing iframe window.innerHeight 0 issue in Safari*/ document.body
+        .clientHeight;
+</script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.1.1/build/g6.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/assets/lib/jquery-3.2.1.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.hierarchy-0.5.0/build/hierarchy.js"></script>
+<script type="" src="index.js"></script>
+</body>
+</html>
